@@ -1,56 +1,60 @@
-# sistema-rh-java 💼🧑‍💻
-📋 Descrição
-Este projeto é um sistema básico de RH que permite gerenciar departamentos e funcionários, armazenando os dados em um banco MySQL. O sistema oferece funcionalidades para:
 
-🏢 Cadastrar departamentos e funcionários
+sistema-rh-java 💼🧑‍💻
+Simple Human Resources (HR) system developed in Java with MySQL database connection.
 
-📄 Listar departamentos e funcionários cadastrados
+📋 Description
+This project is a basic HR system that allows managing departments and employees, storing data in a MySQL database. The system provides functionalities to:
 
-💾 Exportar a lista de funcionários para arquivo CSV
+🏢 Register departments and employees
 
-📊 Gerar gráfico de salários dos funcionários em formato PNG
+📄 List registered departments and employees
 
-O sistema utiliza JDBC para conexão com o banco de dados e a biblioteca JFreeChart para gerar gráficos.
+💾 Export the employee list to a CSV file
 
-🚀 Funcionalidades
-Cadastro de Departamentos: 🏢 Adiciona novos departamentos à base.
+📊 Generate salary charts for employees in PNG format
 
-Listagem de Departamentos: 📋 Exibe todos os departamentos cadastrados.
+The system uses JDBC for database connection and the JFreeChart library to generate charts.
 
-Cadastro de Funcionários: 👩‍💼 Insere funcionários associados a departamentos, com salário.
+🚀 Features
+Department Registration: 🏢 Add new departments to the database.
 
-Listagem de Funcionários: 📃 Exibe todos os funcionários com seus departamentos e salários.
+Department Listing: 📋 Display all registered departments.
 
-Exportação CSV: 💾 Gera um arquivo funcionarios.csv com dados dos funcionários.
+Employee Registration: 👩‍💼 Insert employees linked to departments, with salary.
 
-Gráfico de Salários: 📈 Cria um gráfico de barras grafico_salarios.png mostrando os salários por funcionário.
+Employee Listing: 📃 Display all employees with their departments and salaries.
 
-📁 Estrutura do Projeto
-src/ — código fonte Java:
+CSV Export: 💾 Generate a employees.csv file with employee data.
 
-Conexao.java — classe para conexão com banco MySQL via JDBC 🔗
+Salary Chart: 📈 Create a bar chart salary_chart.png showing employees' salaries.
 
-Departamento.java — modelo do departamento 🏢
+📁 Project Structure
+src/ — Java source code:
 
-DepartamentoDAO.java — operações CRUD para departamentos 🛠️
+Conexao.java — class for MySQL connection via JDBC 🔗
 
-Funcionario.java — modelo do funcionário 👤
+Departamento.java — department model 🏢
 
-FuncionarioDAO.java — operações CRUD para funcionários e exportação CSV 📄
+DepartamentoDAO.java — CRUD operations for departments 🛠️
 
-Grafico.java — geração de gráficos usando JFreeChart 📊
+Funcionario.java — employee model 👤
 
-Main.java — interface de linha de comando para interagir com o sistema 🖥️
+FuncionarioDAO.java — CRUD operations for employees and CSV export 📄
 
-lib/ — dependências (ex: driver JDBC, JFreeChart) 📦
+Grafico.java — chart generation using JFreeChart 📊
 
-bin/ — arquivos compilados .class 💾
+Main.java — command line interface to interact with the system 🖥️
 
-funcionarios.csv — arquivo CSV gerado 💿
+lib/ — dependencies (e.g. JDBC driver, JFreeChart) 📦
 
-grafico_salarios.png — imagem gerada com gráfico dos salários 🖼️
+bin/ — compiled .class files 💾
 
-🛠️ Tecnologias usadas
+employees.csv — generated CSV file 💿
+
+salary_chart.png — generated salary chart image 🖼️
+
+🛠️ Technologies Used
+>>>>>>> fc7d36e (Primeiro commit)
 Java 8+ ☕
 
 MySQL 🐬
@@ -59,9 +63,15 @@ JDBC 🔗
 
 JFreeChart 📊
 
+<<<<<<< HEAD
 ⚙️ Como usar
 Configurar banco de dados MySQL
 Crie o banco rh com as tabelas departamentos e funcionarios:
+=======
+⚙️ How to Use
+Set up MySQL database
+Create the rh database with the tables departamentos and funcionarios:
+>>>>>>> fc7d36e (Primeiro commit)
 
 sql
 Copiar
@@ -81,17 +91,30 @@ CREATE TABLE funcionarios (
   salario DOUBLE,
   FOREIGN KEY (departamento_id) REFERENCES departamentos(id)
 );
+<<<<<<< HEAD
 Ajustar credenciais de conexão
 No arquivo Conexao.java, configure usuário e senha MySQL:
+=======
+Adjust connection credentials
+In Conexao.java, configure MySQL username and password:
+>>>>>>> fc7d36e (Primeiro commit)
 
 java
 Copiar
 Editar
 private static final String USUARIO = "root";
 private static final String SENHA = "password";
+<<<<<<< HEAD
 Compilar e executar
 Compile o projeto e rode a classe Main para abrir o menu de comandos. ▶️
 
 Funcionalidades
 Utilize o menu para cadastrar, listar, exportar e gerar gráficos.
 
+=======
+Compile and run
+Compile the project and run the Main class to open the command menu. ▶️
+
+Features
+Use the menu to register, list, export, and generate charts.
+>>>>>>> fc7d36e (Primeiro commit)
