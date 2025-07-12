@@ -1,4 +1,3 @@
-=======
 # sistema-rh-java 💼🧑‍💻
 📋 Descrição
 Este projeto é um sistema básico de RH que permite gerenciar departamentos e funcionários, armazenando os dados em um banco MySQL. O sistema oferece funcionalidades para:
